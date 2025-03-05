@@ -1,0 +1,6 @@
+z -- s1.length()
+1
+p -- Display (s1)
+1
+q -- quit
+

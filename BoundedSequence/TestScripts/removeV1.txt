@@ -1,0 +1,13 @@
+e -- s1.add (0, "first")
+1
+0
+first
+p -- Display (s1)
+1
+d -- s1.remove (0, x)
+1
+0
+p -- Display (s1)
+1
+q -- quit
+

@@ -1,0 +1,24 @@
+e -- s1.add (0, "3rd")
+1
+0
+3rd
+e -- s1.add (0, "1st")
+1
+0
+1st
+e -- s1.add (1, "2nd")
+1
+1
+2nd
+o -- outputToFile (s1)
+numbers.dat
+1
+p -- Display (s1)
+1
+l -- loadFromFile (s2)
+numbers.dat
+2
+p -- Display (s2)
+2
+q -- quit
+

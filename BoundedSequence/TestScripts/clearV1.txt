@@ -1,0 +1,12 @@
+e -- s1.add (0, "3rd")
+1
+0
+3rd
+p -- Display (s1)
+1
+c -- s1.clear ()
+1
+p -- Display (s1)
+1
+q -- quit
+

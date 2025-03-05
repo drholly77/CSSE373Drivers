@@ -1,0 +1,16 @@
+e -- s1.add (0, "third")
+1
+0
+third
+e -- s1.add (0, "first")
+1
+0
+first
+e -- s1.add (1, "second")
+1
+1
+second
+p -- Display (s1)
+1
+q -- quit
+

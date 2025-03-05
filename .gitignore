@@ -1,0 +1,54 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Visual Studio
+*.pdb
+*.log
+*.ilk
+*.idb
+*.lastbuildstate
+*.db
+*.ipch
+*.pch
+*.exe
+Debug/
+Release/
+**/.vs/**
+.vs/**
+*.vsp
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app

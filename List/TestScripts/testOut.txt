@@ -1,0 +1,445 @@
+ ***** addRightFront.txt ***** 
+
+Right length of which List? 1..7:
+|s3.right| = 0
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Right length of which List? 1..7:
+|s3.right| = 3
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Quit Command Interpreter
+end program
+ ***** advance.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Right length of which List? 1..7:
+|s5.right| = 3
+
+Advance which List? 1..7:
+s5.advance(); executed.
+
+Advance which List? 1..7:
+s5.advance(); executed.
+
+Right length of which List? 1..7:
+|s5.right| = 1
+
+Display which List? 1..7:
+s5 = <"C202","C343"> <"C455">
+
+
+Quit Command Interpreter
+end program
+ ***** clear.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Right length of which List? 1..7:
+|s3.right| = 3
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Clear which List? 1..7:
+
+s3.clear(); executed.
+
+Right length of which List? 1..7:
+|s3.right| = 0
+
+Display which List? 1..7:
+s3 = <> <>
+
+
+Quit Command Interpreter
+end program
+ ***** copyV1.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Copy which List? 1..7:
+to which List? 1..7:
+
+s1 = s3; executed.
+
+Display which List? 1..7:
+s1 = <> <"C202","C343","C455">
+
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Quit Command Interpreter
+end program
+ ***** copyV2.txt ***** 
+
+Copy which List? 1..7:
+to which List? 1..7:
+to which List? 1..7:
+to which List? 1..7:
+
+s1 = s3; executed.
+
+Quit Command Interpreter
+end program
+ ***** IO.txt 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Enter data file name: 
+Output from which List? 1..7:
+
+Enter data file name: 
+Load file into which List? 1..7:
+
+Display which List? 1..7:
+s3 = <> <"C101","C343","C455">
+
+
+Display which List? 1..7:
+s5 = <> <"C455","C343","C101">
+
+
+Quit Command Interpreter
+end program
+ ***** moveToFinish.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Move to finish which List? 1..7:
+s3.moveToFinish(); executed.
+
+Left length of which List? 1..7:
+|s3.left| = 3
+
+Right length of which List? 1..7:
+|s3.right| = 0
+
+Display which List? 1..7:
+s3 = <"C202","C343","C455"> <>
+
+
+Quit Command Interpreter
+end program
+ ***** moveToStart.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Advance which List? 1..7:
+s3.advance(); executed.
+
+Advance which List? 1..7:
+s3.advance(); executed.
+
+Left length of which List? 1..7:
+|s3.left| = 2
+
+Right length of which List? 1..7:
+|s3.right| = 1
+
+Display which List? 1..7:
+s3 = <"C202","C343"> <"C455">
+
+
+Move to start which List? 1..7:
+s3.moveToStart(); executed.
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Quit Command Interpreter
+end program
+ ***** removeRightFront.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s3.addRightFront(x); executed.
+x = ""
+
+Display which List? 1..7:
+s3 = <> <"C202","C343","C455">
+
+
+Remove right from which List? 1..7:
+
+s3.removeRightFront(x); executed.
+x = "C202"
+
+Remove right from which List? 1..7:
+
+s3.removeRightFront(x); executed.
+x = "C343"
+
+Remove right from which List? 1..7:
+
+s3.removeRightFront(x); executed.
+x = "C455"
+
+Display which List? 1..7:
+s3 = <> <>
+
+
+Quit Command Interpreter
+end program
+ ***** replaceRightFront.txt 
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Advance which List? 1..7:
+s5.advance(); executed.
+
+Replace right front of which List? 1..7:
+Enter text string:
+s5.replaceRightFront(x); executed.
+x = "C455"
+
+Display which List? 1..7:
+s5 = <"C437"> <"B438">
+
+
+Quit Command Interpreter
+end program
+ ***** rightFront.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s2.addRightFront(x); executed.
+x = ""
+
+Access right front which List? 1..7:
+s2.rightFront() = "C251"
+
+Quit Command Interpreter
+end program
+ ***** swapRightsV1.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s5.addRightFront(x); executed.
+x = ""
+
+Advance which List? 1..7:
+s5.advance(); executed.
+
+Add right to which List? 1..7:
+Enter text string:
+s2.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s2.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s2.addRightFront(x); executed.
+x = ""
+
+Advance which List? 1..7:
+s2.advance(); executed.
+
+Advance which List? 1..7:
+s2.advance(); executed.
+
+Swap rights which List? 1..7:
+with which List? 1..7:
+
+s5.swapRights(s2); executed.
+
+Display which List? 1..7:
+s2 = <"S327","S250"> <"C343","C455">
+
+
+Display which List? 1..7:
+s5 = <"C202"> <"S355">
+
+
+Quit Command Interpreter
+end program
+ ***** swapRightsV2.txt ***** 
+
+Swap rights which List? 1..7:
+with which List? 1..7:
+with which List? 1..7:
+with which List? 1..7:
+
+s3.swapRights(s1); executed.
+
+Quit Command Interpreter
+end program
+ ***** transferFromV1.txt ***** 
+
+Add right to which List? 1..7:
+Enter text string:
+s1.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s1.addRightFront(x); executed.
+x = ""
+
+Add right to which List? 1..7:
+Enter text string:
+s1.addRightFront(x); executed.
+x = ""
+
+Transfer from which List? 1..7:
+to which List? 1..7:
+
+s5.transferFrom(s1); executed.
+
+Display which List? 1..7:
+s1 = <> <>
+
+
+Display which List? 1..7:
+s5 = <> <"C202","C343","C455">
+
+
+Quit Command Interpreter
+end program
+ ***** transferFromV2.txt ***** 
+
+Transfer from which List? 1..7:
+to which List? 1..7:
+to which List? 1..7:
+to which List? 1..7:
+
+s1.transferFrom(s5); executed.
+
+Quit Command Interpreter
+end program

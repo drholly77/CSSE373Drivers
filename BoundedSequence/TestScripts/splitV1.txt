@@ -1,0 +1,21 @@
+e -- s1.add (0, "third")
+1
+0
+third
+e -- s1.add (0, "first")
+1
+0
+first
+e -- s1.add (1, "second")
+1
+1
+second
+s -- s1.split (1, s2)
+1
+1
+p -- Display (s1)
+1
+p -- Display (s2)
+2
+q -- quit
+

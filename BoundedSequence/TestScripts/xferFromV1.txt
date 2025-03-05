@@ -1,0 +1,24 @@
+e -- s2.add (0, "third")
+2
+0
+third
+e -- s2.add (0, "first")
+2
+0
+first
+e -- s2.add (1, "second")
+2
+1
+second
+e -- s2.add (3, "fourth")
+2
+3
+fourth
+x
+2
+p -- Display (s2)
+2
+p -- Display (s1)
+1
+q -- quit
+

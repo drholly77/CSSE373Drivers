@@ -1,0 +1,45 @@
+e -- s2.add (0, "zeroth")
+2
+0
+zeroth
+e -- s2.add (0, "first")
+2
+1
+first
+e -- s2.add (1, "second")
+2
+2
+second
+e -- s2.add (3, "third")
+2
+3
+third
+e -- s2.add (4, "fourth")
+2
+4
+fourth
+p -- Display (s2)
+2
+r -- s2.replaceEntry (4, x)
+2
+4
+4th
+r -- s2.replaceEntry (2, x)
+2
+2
+2nd
+r -- s2.replaceEntry (0, x)
+2
+0
+0th
+r -- s2.replaceEntry (1, x)
+2
+1
+1st
+r -- s2.replaceEntry (3, x)
+2
+3
+3rd
+p -- Display (s2)
+2
+q -- quit
