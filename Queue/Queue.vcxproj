@@ -150,9 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\csse373devenv202430-drholly77\UUGraphDriver\driver.cpp" />
     <ClCompile Include="driver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\csse373devenv202430-drholly77\UUGraphDriver\UUGraphInst.h" />
     <ClInclude Include="..\components\include\Queue\Queue0.hpp" />
     <ClInclude Include="..\components\include\Queue\Queue1.hpp" />
     <ClInclude Include="..\components\include\Queue\Queue2.hpp" />

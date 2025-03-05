@@ -18,6 +18,9 @@
     <ClCompile Include="driver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\csse373devenv202430-drholly77\UUGraphDriver\driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\components\include\Queue\Queue0.hpp">
@@ -30,6 +33,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="..\components\include\Queue\queuechecking.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\csse373devenv202430-drholly77\UUGraphDriver\UUGraphInst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
