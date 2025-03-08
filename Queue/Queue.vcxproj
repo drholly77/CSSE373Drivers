@@ -150,7 +150,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\csse373devenv202430-drholly77\UUGraphDriver\driver.cpp" />
     <ClCompile Include="driver.cpp" />
   </ItemGroup>
   <ItemGroup>

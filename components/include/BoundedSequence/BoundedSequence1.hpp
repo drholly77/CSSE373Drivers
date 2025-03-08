@@ -11,9 +11,11 @@
 // template Class Specification
 //-----------------------------------------------------------------------
 template <class T, int maxLength>
-class BoundedSequence1 : public StdOps<BoundedSequence1<T, maxLength>>, public BoundedSequenceKernel<BoundedSequence1<T, maxLength>, T, maxLength>
+class BoundedSequence1 : 
+	public StdOps<BoundedSequence1<T, maxLength>>, 
+	public BoundedSequenceKernel<BoundedSequence1<T, maxLength>, T, maxLength>
 {
-public: // standard Operations
+public: // Standard Operations
 	BoundedSequence1();
 	BoundedSequence1(const BoundedSequence1& s) = delete;
 	~BoundedSequence1();
@@ -105,7 +107,7 @@ BoundedSequence1<T, maxLength>& BoundedSequence1<T, maxLength>::operator = (Boun
 	contents = rhs.contents;
 	currentLength = rhs.currentLength;
 
-	return (*this);
+	return *this;
 } // operator =
 
 //-----------------------------------------------------------------------
@@ -192,7 +194,7 @@ void BoundedSequence1<T, maxLength>::split(Integer pos, BoundedSequence1& receiv
 template <class T, int maxLength>
 Integer BoundedSequence1<T, maxLength>::length(void)
 {
-	return (currentLength);
+	return currentLength;
 }	// length
 
 //-----------------------------------------------------------------------

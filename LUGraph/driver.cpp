@@ -1,3 +1,4 @@
+/*
 #include "Wrapper.h"
 #include "LUGraphInst.h"
 
@@ -503,3 +504,12 @@ int main(int argc, char* argv[])
 	wcout << "end program" << endl;
 	return 0;
 }	// end main
+
+*/
+
+
+int main(int argc, char* argv[])
+{
+
+	return 0;
+}
