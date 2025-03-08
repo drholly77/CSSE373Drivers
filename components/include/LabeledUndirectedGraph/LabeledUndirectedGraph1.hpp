@@ -1,5 +1,5 @@
 #pragma once
-#include "UnlabeledUndirectedGraph/UnlabeledUndirectedGraphKernel.hpp"
+#include "LabeledUndirectedGraph/LabeledUndirectedGraphKernel.hpp"
 #include "ChainPosition/ChainPosition.hpp"
 
 /*
@@ -12,18 +12,18 @@
 // Template Class Specification
 //-----------------------------------------------------------------------
 
-
-class UnlabeledUndirectedGraph1 : public StdOps<UnlabeledUndirectedGraph1>, public UnlabeledUndirectedGraphKernel
+template <class T>
+class LabeledUndirectedGraph1 : public StdOps<LabeledUndirectedGraph1<T>>, public LabeledUndirectedGraphKernel
 {
 public: // Standard Operations
-	UnlabeledUndirectedGraph1 ();
-	UnlabeledUndirectedGraph1(const UnlabeledUndirectedGraph1& s) = delete;
-	~UnlabeledUndirectedGraph1 ();
+	LabeledUndirectedGraph1 ();
+	LabeledUndirectedGraph1(const LabeledUndirectedGraph1& s) = delete;
+	~LabeledUndirectedGraph1 ();
 	void clear (void);
-	void transferFrom (UnlabeledUndirectedGraph1& source);
-	UnlabeledUndirectedGraph1& operator = (UnlabeledUndirectedGraph1& rhs);
+	void transferFrom (LabeledUndirectedGraph1& source);
+	LabeledUndirectedGraph1& operator = (LabeledUndirectedGraph1& rhs);
 
-	// UnlabeledUndirectedGraph1 Specific Operations
+	// LabeledUndirectedGraph1 Specific Operations
 	void setNumberOfVertices (Integer nv);
 	void addEdge (Integer v1, Integer v2);
 	void removeEdge (Integer v1, Integer v2);
@@ -34,7 +34,7 @@ public: // Standard Operations
 	Integer degree (Integer v);
 	Boolean isEdge (Integer v1, Integer v2);
 
-	friend wostream& operator << (wostream& os, UnlabeledUndirectedGraph1& g);
+	friend wostream& operator << (wostream& os, LabeledUndirectedGraph1& g);
 		//! updates os
 		//! restores g
 
@@ -119,26 +119,26 @@ private: // Representation
 // Exported Operations
 //-----------------------------------------------------------------------
 
-UnlabeledUndirectedGraph1::UnlabeledUndirectedGraph1()
+LabeledUndirectedGraph1::LabeledUndirectedGraph1()
 {
 	ChainPositionOfGraphTuple smartPosition;
 	GraphTupleRecord label;
 
 	smartPosition.labelNew(label);
 	chain.transferFrom(smartPosition);
-}	// UnlabeledUndirectedGraph1
+}	// LabeledUndirectedGraph1
 
 //-----------------------------------------------------------------------
 
 
-UnlabeledUndirectedGraph1::~UnlabeledUndirectedGraph1()
+LabeledUndirectedGraph1::~LabeledUndirectedGraph1()
 {
-}	// ~UnlabeledUndirectedGraph1
+}	// ~LabeledUndirectedGraph1
 
 //-----------------------------------------------------------------------
 
 
-void UnlabeledUndirectedGraph1::clear(void)
+void LabeledUndirectedGraph1::clear(void)
 {
 	ChainPositionOfGraphTuple smartPosition;
 	GraphTupleRecord label;
@@ -153,7 +153,7 @@ void UnlabeledUndirectedGraph1::clear(void)
 //-----------------------------------------------------------------------
 
 
-void UnlabeledUndirectedGraph1::transferFrom(UnlabeledUndirectedGraph1& source)
+void LabeledUndirectedGraph1::transferFrom(LabeledUndirectedGraph1& source)
 {
 	chain.transferFrom(source.chain);
 	vertexCount.transferFrom(source.vertexCount);
@@ -163,8 +163,8 @@ void UnlabeledUndirectedGraph1::transferFrom(UnlabeledUndirectedGraph1& source)
 //-----------------------------------------------------------------------
 
 
-UnlabeledUndirectedGraph1& 
-UnlabeledUndirectedGraph1::operator = (UnlabeledUndirectedGraph1& rhs)
+LabeledUndirectedGraph1& 
+LabeledUndirectedGraph1::operator = (LabeledUndirectedGraph1& rhs)
 {
 	ChainPositionOfGraphTuple newPos, oldPos, current;
 	GraphTupleRecord x;
@@ -190,13 +190,13 @@ UnlabeledUndirectedGraph1::operator = (UnlabeledUndirectedGraph1& rhs)
 //-----------------------------------------------------------------------
 
 
-void UnlabeledUndirectedGraph1::setNumberOfVertices(Integer nv)
+void LabeledUndirectedGraph1::setNumberOfVertices(Integer nv)
 {
 	vertexCount = nv;
 } // setNumberOfVertices
 
 
-void UnlabeledUndirectedGraph1::addEdge(Integer v1, Integer v2)
+void LabeledUndirectedGraph1::addEdge(Integer v1, Integer v2)
 {
 	GraphTupleRecord newTuple(v1, v2);
 	ChainPositionOfGraphTuple newPosition;
@@ -214,7 +214,7 @@ void UnlabeledUndirectedGraph1::addEdge(Integer v1, Integer v2)
 //-----------------------------------------------------------------------
 
 
-void UnlabeledUndirectedGraph1::removeEdge(Integer v1, Integer v2)
+void LabeledUndirectedGraph1::removeEdge(Integer v1, Integer v2)
 {
 	ChainPositionOfGraphTuple trailingPosition;
 	ChainPositionOfGraphTuple currentPosition;
@@ -238,7 +238,7 @@ void UnlabeledUndirectedGraph1::removeEdge(Integer v1, Integer v2)
 
 //-----------------------------------------------------------------------
 
-void UnlabeledUndirectedGraph1::removeAnyIncidentEdge(Integer v1, Integer& v2)
+void LabeledUndirectedGraph1::removeAnyIncidentEdge(Integer v1, Integer& v2)
 {
 	ChainPositionOfGraphTuple trailingPosition;
 	ChainPositionOfGraphTuple currentPosition;
@@ -264,7 +264,7 @@ void UnlabeledUndirectedGraph1::removeAnyIncidentEdge(Integer v1, Integer& v2)
 //-----------------------------------------------------------------------
 
 
-void UnlabeledUndirectedGraph1::removeAnyEdge(Integer& v1, Integer& v2)
+void LabeledUndirectedGraph1::removeAnyEdge(Integer& v1, Integer& v2)
 {
 	ChainPositionOfGraphTuple position;
 	GraphTupleRecord existingPair;
@@ -285,21 +285,21 @@ void UnlabeledUndirectedGraph1::removeAnyEdge(Integer& v1, Integer& v2)
 //-----------------------------------------------------------------------
 
 
-Integer UnlabeledUndirectedGraph1::numberOfVertices(void)
+Integer LabeledUndirectedGraph1::numberOfVertices(void)
 {
 	return vertexCount;
 }	// numberOfVertices
 
 //-----------------------------------------------------------------------
 
-Integer UnlabeledUndirectedGraph1::numberOfEdges(void)
+Integer LabeledUndirectedGraph1::numberOfEdges(void)
 {
 	return edgeCount;
 }	// numberOfEdges
 
 //-----------------------------------------------------------------------
 
-Integer UnlabeledUndirectedGraph1::degree(Integer v)
+Integer LabeledUndirectedGraph1::degree(Integer v)
 {
 	ChainPositionOfGraphTuple position;
 	Integer degreeCount;
@@ -319,7 +319,7 @@ Integer UnlabeledUndirectedGraph1::degree(Integer v)
 
 //-----------------------------------------------------------------------
 
-Boolean UnlabeledUndirectedGraph1::isEdge(Integer v1, Integer v2) {
+Boolean LabeledUndirectedGraph1::isEdge(Integer v1, Integer v2) {
 	ChainPositionOfGraphTuple position;
 	Integer degreeCount;
 
@@ -334,9 +334,9 @@ Boolean UnlabeledUndirectedGraph1::isEdge(Integer v1, Integer v2) {
 
 //-----------------------------------------------------------------------
 
-wostream& operator<<(wostream& os, UnlabeledUndirectedGraph1& g)
+wostream& operator<<(wostream& os, LabeledUndirectedGraph1& g)
 {
-	UnlabeledUndirectedGraph1 temp;
+	LabeledUndirectedGraph1 temp;
 
 	os << L"({";
 	for (int k = 1, z = g.numberOfVertices(), lastItem = z - 1; k <= z; k++) {

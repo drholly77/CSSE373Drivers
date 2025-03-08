@@ -25,6 +25,7 @@ public: // Queue Specific Operations
 	virtual void enqueue (T& x) = 0;
 	//! updates self
 	//! clears x
+    //! requires: |self| + 1 <= maxLength
 	//! ensures: self = #self * <#x>
 	virtual void dequeue (T& x) = 0;
 	//! updates self
@@ -46,5 +47,5 @@ public: // Queue Specific Operations
 	//! ensures: length = |self|
 	virtual Integer remainingCapacity(void) = 0;
 	//! restores self
-	//! ensures: remainingCapacity = maxLength - |self|
+	//! ensures: remainingCapacity = (maxLength - |self|)
 };

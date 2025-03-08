@@ -102,7 +102,7 @@ int main(int argc, char* argv[])
 	Boolean showMenu = (argc == 1);
 	TextSequence s1, s2;
 	Character command;
-	Integer i, p, size;
+	Integer i, p, size, remCap;
 	Text x;
 
 	do {
@@ -120,17 +120,28 @@ int main(int argc, char* argv[])
 			wcout << "Add to ";
 			i = getIndex();
 			if (i == 1) {
-				p = getPosition(s1.length());
-				getText(x);
-				s1.add(p, x);
+				remCap = s1.remainingCapacity();
+				if (remCap > 0) {
+					p = getPosition(s1.length());
+					getText(x);
+					s1.add(p, x);
+				}
 			}
 			else {
-				p = getPosition(s2.length());
-				getText(x);
-				s2.add(p, x);
-			} // end if
-			wcout << endl << "s" << i << ".add(" << p << ", x); executed." << endl;
-			wcout << "x = " << x << endl;;
+				remCap = s2.remainingCapacity();
+				if (remCap > 0) {
+					p = getPosition(s2.length());
+					getText(x);
+					s2.add(p, x);
+				} // end if
+			}
+			if (remCap > 0) {
+				wcout << endl << "s" << i << ".add(" << p << ", x); executed." << endl;
+				wcout << "x = " << x << endl;
+			}
+			else {
+				wcout << "Error: s" << i <<" has reached capacity. Cannot add to a full bounded sequence." << endl;
+			}
 			break;
 		case 'd':
 			wcout << "Remove from ";
@@ -167,12 +178,22 @@ int main(int argc, char* argv[])
 			wcout << "Append ";
 			i = getIndex();
 			if (i == 1) {
-				s2.append(s1);
-				wcout << "s2.append(s1); executed." << endl;
+				if (s2.remainingCapacity() >= s1.length()) {
+					s2.append(s1);
+					wcout << "s2.append(s1); executed." << endl;
+				}
+				else {
+					wcout << "Error: s2's remaining capacity cannot accomodate s1's items." << endl;
+				}
 			}
 			else {
-				s1.append(s2);
-				wcout << "s1.append(s2); executed." << endl;
+				if (s1.remainingCapacity() >= s2.length()) {
+					s1.append(s2);
+					wcout << "s1.append(s2); executed." << endl;
+				}
+				else {
+					wcout << "Error: s1's remaining capacity cannot accomodate s2's items." << endl;
+				}
 			} // end if
 			break;
 		case 's':

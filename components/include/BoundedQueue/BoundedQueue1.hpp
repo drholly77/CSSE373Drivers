@@ -1,6 +1,6 @@
 #pragma once
 #include "BoundedQueue/BoundedQueueKernel.hpp"
-#include "StaticArray\StaticArray1.hpp"
+#include "StaticArray/StaticArray1.hpp"
 
 /*
 	Realization of BoundedQueue using StaticArray
@@ -100,7 +100,7 @@ BoundedQueue1<T, maxLength>& BoundedQueue1<T, maxLength>::operator = (BoundedQue
 {
 	contents = rhs.contents;
 	currentLength = rhs.currentLength;
-	return (*this);
+	return *this;
 } // operator =
 
 //-----------------------------------------------------------------------
@@ -163,7 +163,7 @@ T& BoundedQueue1<T, maxLength>::front (void)
 template <class T, int maxLength>
 Integer BoundedQueue1<T, maxLength>::length (void)
 {
-	return (currentLength);
+	return currentLength;
 }	// length
 
 //-----------------------------------------------------------------------

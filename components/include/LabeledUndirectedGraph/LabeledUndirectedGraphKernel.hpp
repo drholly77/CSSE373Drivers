@@ -7,8 +7,8 @@
 //-----------------------------------------------------------------------
 // Template Class Specification
 //-----------------------------------------------------------------------
-
-class UnlabeledUndirectedGraphKernel
+template <class T>
+class LabeledUndirectedGraphKernel
 
 	/*!
 		math subtype BARE_EDGE is finite set of integer
@@ -51,6 +51,13 @@ public: // UnlabeledUndirectedGraph Specific Operations
 	//! restores nv
 	//! ensures: self.nodes = {n: integer where (1 <= n <= nv) (n)}  and
 	//!          self.edges = {}
+	
+	virtual void swapVertexLabel(Integer v, T& label) = 0;
+	//! updates self, label
+	//! restores v
+	//! requires: v is in g.vertices
+	//! ensures: g.vertices = #g.vertices and
+	//!          g.edges = #g.edges
 
 	virtual void addEdge(Integer v1, Integer v2) = 0;
 	//! updates self

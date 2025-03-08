@@ -26,7 +26,8 @@ public: // BoundedSequence Specific Operations
 	//! updates self
 	//! restores pos
 	//! clears x
-	//! requires: 0 <= pos <= |self|
+	//! requires: 0 <= pos <= |self| and
+	//!           |self| + 1 <= maxLength
 	//! ensures: self = #self[0, pos) * <#x> * #self[pos, |#self|)
 	virtual void remove (Integer pos, T& x) = 0;
 	//! updates self
@@ -48,6 +49,7 @@ public: // BoundedSequence Specific Operations
 	virtual void append (BoundedSequenceOfT& sToAppend) = 0;
 	//! updates self
 	//! clears sToAppend
+	//! requires: |self| + |sToAppend| <= maxLength
 	//! ensures: self = #self * sToAppend
 	virtual void split (Integer pos, BoundedSequenceOfT& receivingS) = 0;
 	//! updates self
@@ -60,5 +62,5 @@ public: // BoundedSequence Specific Operations
 	//! ensures: length = |self|
 	virtual Integer remainingCapacity(void) = 0;
 	//! restores self
-	//! ensures: remainingCapacity  = maxLength - |self|
+	//! ensures: remainingCapacity = (maxLength - |self|)
 };

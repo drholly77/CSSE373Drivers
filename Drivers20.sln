@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WrapperLib", "WrapperLib\Wr
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UUGraph", "UUGraph\UUGraph.vcxproj", "{B903062B-784A-47A1-A3A6-856999E2F52F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LUGraph", "LUGraph\LUGraph.vcxproj", "{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -211,6 +213,14 @@ Global
 		{B903062B-784A-47A1-A3A6-856999E2F52F}.Release|x64.Build.0 = Release|x64
 		{B903062B-784A-47A1-A3A6-856999E2F52F}.Release|x86.ActiveCfg = Release|Win32
 		{B903062B-784A-47A1-A3A6-856999E2F52F}.Release|x86.Build.0 = Release|Win32
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Debug|x64.ActiveCfg = Debug|x64
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Debug|x64.Build.0 = Debug|x64
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Debug|x86.Build.0 = Debug|Win32
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x64.ActiveCfg = Release|x64
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x64.Build.0 = Release|x64
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x86.ActiveCfg = Release|Win32
+		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
