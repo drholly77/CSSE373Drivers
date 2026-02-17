@@ -6,13 +6,10 @@
 // author: Dr. Holly
 //
 
-template <
-	class T,
-	class UncheckedSet
->
-class SetChecking1:
-	public UncheckedSet
+template <class T, class UncheckedSet>
+class SetChecking1:	public UncheckedSet
 {
+private:
 	typedef UncheckedSet SetOfT;
 public:
 

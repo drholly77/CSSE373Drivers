@@ -5,13 +5,10 @@
 // author: Dr. Holly
 //
 
-template <
-	class T,
-	class UncheckedPartitionableArray
->
-class PartitionableArrayChecking1:
-	public UncheckedPartitionableArray
+template <class T, class UncheckedPartitionableArray>
+class PartitionableArrayChecking1: public UncheckedPartitionableArray
 {
+private:
 	typedef UncheckedPartitionableArray PartitionableArrayOfT;
 public:
 T& operator [] (Integer index)

@@ -4,14 +4,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	int maxLength,
-	class UncheckedBoundedQueue
->
-class BoundedQueueChecking1:
-	public UncheckedBoundedQueue
+template <class T, int maxLength, class UncheckedBoundedQueue>
+class BoundedQueueChecking1: public UncheckedBoundedQueue
 {
+private:
 	typedef UncheckedBoundedQueue BoundedQueueOfT;
 public:
 

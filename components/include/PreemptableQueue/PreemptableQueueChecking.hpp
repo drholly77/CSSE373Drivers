@@ -4,13 +4,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UncheckedPreemptableQueue
->
-class PreemptableQueueChecking1:
-	public UncheckedPreemptableQueue
+template <class T, class UncheckedPreemptableQueue>
+class PreemptableQueueChecking1: public UncheckedPreemptableQueue
 {
+private:
 	typedef UncheckedPreemptableQueue PreemptableQueueOfT;
 public:
 

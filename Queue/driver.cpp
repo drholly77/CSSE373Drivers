@@ -19,7 +19,7 @@ typedef Queue1<Text> QueueOfText;
 #else
 // Compiling in Debug configuration
 #include "Queue\QueueChecking.hpp"
-typedef QueueChecking1 <Text, Queue2<Text>> QueueOfText;
+typedef QueueChecking1 <Text, Queue1<Text>> QueueOfText;
 #endif
 
 

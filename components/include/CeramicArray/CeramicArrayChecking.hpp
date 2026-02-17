@@ -5,13 +5,10 @@
 // author: Dr. Holly
 //
 
-template <
-	class T,
-	class UncheckedCeramicArray
->
-class CeramicArrayChecking1:
-	public UncheckedCeramicArray
+template <class T, class UncheckedCeramicArray>
+class CeramicArrayChecking1: public UncheckedCeramicArray
 {
+private:
 	typedef UncheckedCeramicArray CeramicArrayOfT;
 public:
 

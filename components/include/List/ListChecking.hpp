@@ -5,13 +5,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UnchedkedList
->
-class ListChecking1:
-	public UnchedkedList
+template <class T, class UnchedkedList>
+class ListChecking1: public UnchedkedList
 {
+private:
 	typedef UnchedkedList ListOfT;
 public:
 

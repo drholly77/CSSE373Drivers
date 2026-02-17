@@ -6,14 +6,10 @@
 */
 
 
-template <
-	class T,
-	int maxLength,
-	class UncheckedBoundedList
->
-class BoundedListChecking1 :
-	public UncheckedBoundedList
+template <class T, int maxLength, class UncheckedBoundedList>
+class BoundedListChecking1 : public UncheckedBoundedList
 {
+private:
 	typedef UncheckedBoundedList BoundedListOfT;
 public:
 

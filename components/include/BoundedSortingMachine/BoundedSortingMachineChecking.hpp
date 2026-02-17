@@ -5,13 +5,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UncheckedBoundedSortingMachine
->
-class BoundedSortingMachineChecking1:
-	public UncheckedBoundedSortingMachine
+template <class T, class UncheckedBoundedSortingMachine>
+class BoundedSortingMachineChecking1: public UncheckedBoundedSortingMachine
 {
+private:
 	typedef UncheckedBoundedSortingMachine BoundedSortingMachineOfT;
 public:
 

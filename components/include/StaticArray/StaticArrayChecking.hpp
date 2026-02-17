@@ -5,15 +5,10 @@
 // author: Dr. Holly
 //
 
-template <
-		class T,
-		int lowerBound,
-		int upperBound,
-		class UncheckedStaticArray
-	>
-class StaticArrayChecking1:
-	public UncheckedStaticArray
+template <class T, int lowerBound, int upperBound, class UncheckedStaticArray>
+class StaticArrayChecking1:	public UncheckedStaticArray
 {
+private:
 	typedef UncheckedStaticArray StaticArrayOfT;
 public:
 T& operator [] (Integer index)

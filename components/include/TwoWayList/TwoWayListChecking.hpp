@@ -5,13 +5,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UncheckedTwoWayList
->
-class TwoWayListChecking1:
-	public UncheckedTwoWayList
+template <class T, class UncheckedTwoWayList>
+class TwoWayListChecking1: public UncheckedTwoWayList
 {
+private:
 	typedef UncheckedTwoWayList TwoWayListOfT;
 public:
 

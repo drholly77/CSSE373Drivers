@@ -5,14 +5,10 @@
 // author: Dr. Holly
 //
 
-template <
-	class K,
-	class V,
-	class UncheckedMap
->
-class MapChecking1:
-	public UncheckedMap
+template <class K, class V, class UncheckedMap>
+class MapChecking1: public UncheckedMap
 {
+private:
 	typedef UncheckedMap MapOfKV;
 public:
 

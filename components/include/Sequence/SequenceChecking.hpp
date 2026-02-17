@@ -6,13 +6,10 @@
 //
 
 
-template <
-	class T,
-	class UncheckedSequence
->
-class SequenceChecking1:
-	public UncheckedSequence
+template <class T, class UncheckedSequence>
+class SequenceChecking1: public UncheckedSequence
 {
+private:
 	typedef UncheckedSequence SequenceOfT;
 public:
 

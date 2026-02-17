@@ -5,13 +5,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UncheckedStack
->
-class StackChecking1 :
-	public UncheckedStack
+template <class T, class UncheckedStack>
+class StackChecking1 : public UncheckedStack
 {
+private:
 	typedef UncheckedStack StackOfT;
 public:
 

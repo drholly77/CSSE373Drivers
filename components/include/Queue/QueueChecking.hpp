@@ -4,13 +4,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class T,
-	class UncheckedQueue
->
-class QueueChecking1:
-	public UncheckedQueue
+template <class T, class UncheckedQueue>
+class QueueChecking1: public UncheckedQueue
 {
+private:
 	typedef UncheckedQueue QueueOfT;
 public:
 

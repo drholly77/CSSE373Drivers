@@ -4,12 +4,10 @@
 	Author: Dr. Holly
 */
 
-template <
-	class UncheckedUnlabeledUndirectedGraph
->
-class UnlabeledUndirectedGraphChecking1:
-	public UncheckedUnlabeledUndirectedGraph
+template <class UncheckedUnlabeledUndirectedGraph>
+class UnlabeledUndirectedGraphChecking1: public UncheckedUnlabeledUndirectedGraph
 {
+private:
 	typedef UncheckedUnlabeledUndirectedGraph UnlabeledUndirectedGraph;
 public:
 

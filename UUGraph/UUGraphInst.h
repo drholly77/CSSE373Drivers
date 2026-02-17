@@ -4,7 +4,7 @@
 #ifdef _DEBUG
 // Compiling in Debug configuration
 // Use UnlabeledUndirectedGraph1 wrapped by its checking component
-#include "UnlabeledUndirectedGraph/UnlabeledUndirectedGraphChecking1.hpp"
+#include "UnlabeledUndirectedGraph/UnlabeledUndirectedGraphChecking.hpp"
 typedef UnlabeledUndirectedGraphChecking1< UnlabeledUndirectedGraph1> UnlabeledUndirectedGraph;
 #else
 // Compiling in Release configuration
