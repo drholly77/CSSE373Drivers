@@ -19,26 +19,26 @@ class SetKernel
 		//!    ensures: self = {}
 {
 public: // SetKernel Specific Operations
-	void add (T& x);
+	virtual void add (T& x) = 0;
 	//! updates self
 	//! clears x
 	//! requires: x is not in self
 	//! ensures: self = #self union {#x}
-	void remove (T& xFromClient, T& xFromSet);
+	virtual void remove (T& xFromClient, T& xFromSet) = 0;
 	//! updates self
 	//! restores xFromClient
 	//! replaces xFromSet
 	//! requires: xFromClient is in self
 	//! ensures: self = #self \ {xFromSet}  and  xFromSet = xFromClient
-	void removeAny (T& x);
+	virtual void removeAny (T& x) = 0;
 	//! updates self
 	//! replaces x
 	//! requires: |self| > 0
 	//! ensures: self = #self \ {x}
-	Boolean contains (T& x);
+	virtual Boolean contains (T& x) = 0;
 	//! restores self, x
 	//! ensures: contains = (x is in self)
-	Integer size (void);
+	virtual Integer size (void) = 0;
 	//! restores self
 	//! ensures: size = |self|
 };
