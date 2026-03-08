@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11520.95 d18.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Queue", "Queue\Queue.vcxproj", "{E9AFE7EC-F55E-4987-B903-15D2769465B7}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UUGraph", "UUGraph\UUGraph.vcxproj", "{B903062B-784A-47A1-A3A6-856999E2F52F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LUGraph", "LUGraph\LUGraph.vcxproj", "{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BoundedSet", "BoundedSet\BoundedSet.vcxproj", "{DB35F837-5C00-4601-824C-885B5A36783C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -221,6 +223,14 @@ Global
 		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x64.Build.0 = Release|x64
 		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x86.ActiveCfg = Release|Win32
 		{B1A53D8F-3A3F-43AE-93C8-468C5EBD873E}.Release|x86.Build.0 = Release|Win32
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Debug|x64.ActiveCfg = Debug|x64
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Debug|x64.Build.0 = Debug|x64
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Debug|x86.ActiveCfg = Debug|Win32
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Debug|x86.Build.0 = Debug|Win32
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Release|x64.ActiveCfg = Release|x64
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Release|x64.Build.0 = Release|x64
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Release|x86.ActiveCfg = Release|Win32
+		{DB35F837-5C00-4601-824C-885B5A36783C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
